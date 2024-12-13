@@ -16,7 +16,16 @@ export default defineComponent({
   <div class="main">
     <div class="empty-container1"></div>
     <div class="empty-container2"></div>
+    <div class="footer">
+      <div class="footer1">
+        <a href="#">Installation -></a>
+      </div>
 
+      <div class="footer2">
+
+      </div>
+
+    </div>
 
     <div class="header">
 
@@ -158,6 +167,124 @@ export default defineComponent({
 
           <p>Hatch is a modern, extensible Python project manager. See the <a href="#">Why Hatch? </a>page for more information.</p>
 
+          <div class="second-grid">
+            <div class="box1">
+              <h2>Build System</h2>
+              <hr>
+              <p>Reproducible builds by default with a rich ecosystem of plugins</p>
+              <a href="#">configure builds</a>
+            </div>
+
+            <div class="box2">
+              <h2>Enviroments</h2>
+              <hr>
+              <p>Robust environment management with support for custom scripts and UV</p>
+              <a href="#">Getting startet</a>
+            </div>
+
+            <div class="box3">
+              <h2>Python management</h2>
+              <hr>
+              <p>Choose between easy manual installations or automatic as part of environments</p>
+              <a href="#">Try it</a>
+            </div>
+
+            <div class="box4">
+              <h2>Testing</h2>
+              <hr>
+              <p>Test execution with known best practices</p>
+              <a href="#">Run</a>
+            </div>
+
+            <div class="box5">
+              <h2>Static analysis</h2>
+              <hr>
+              <p>Static analysis backed by Ruff with up-to-date, sane defaults</p>
+              <a href="#">Learn</a>
+            </div>
+
+            <div class="box6">
+              <h2>Script runner</h2>
+              <hr>
+              <p>Execute Python scripts with specific dependencies and Python versions</p>
+              <a href="#">Execute</a>
+            </div>
+
+            <div class="box7">
+              <h2>Publishing</h2>
+              <hr>
+              <p>Easily upload to PyPI or other indices</p>
+              <a href="#">See how</a>
+            </div>
+
+            <div class="box8">
+              <h2>Versioning</h2>
+              <hr>
+              <p>Streamlined workflow for bumping versions</p>
+              <a href="#">Managing versions</a>
+            </div>
+
+            <div class="box9">
+              <h2>Project generation</h2>
+              <hr>
+              <p>Create new projects from templates with known best practices</p>
+              <a href="#">Project setup</a>
+            </div>
+
+            <div class="box10">
+              <h2>Responsive CLI</h2>
+              <hr>
+              <p>Hatch is up to 3x faster than equivalent tools</p>
+              <a href="#">CLI reference</a>
+            </div>
+          </div>
+
+          <h3>License</h3>
+          <p>Hatch is distributed under the terms of the <a href="#">MIT</a> license. </p>
+
+          <h3>Navigation</h3>
+          <p>Documentation for specific MAJOR.MINOR versions can be chosen by using the dropdown on the </p>
+          <p>top of every page. The dev version reflects changes that have not yet been released.</p>
+          <p>Also, desktop readers can use special keyboard shortcuts:</p>
+
+          <table class="shortcut-table">
+              <thead>
+                <tr>
+                  <th>Keys</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <ul>
+                      <li><kbd>,</kbd> (comma)</li>
+                      <li><kbd>p</kbd></li>
+                    </ul>
+                  </td>
+                  <td>Navigate to the "previous" page</td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li><kbd>.</kbd> (period)</li>
+                      <li><kbd>n</kbd></li>
+                    </ul>
+                  </td>
+                  <td>Navigate to the "next" page</td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li><kbd>/</kbd></li>
+                      <li><kbd>s</kbd></li>
+                    </ul>
+                  </td>
+                  <td>Display the search modal</td>
+                </tr>
+              </tbody>
+            </table>
+
 
 
 
@@ -193,12 +320,15 @@ export default defineComponent({
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: 100px 1fr 70px;
+  grid-template-rows: 100px 1fr 194px;
   grid-template-columns: 270px 1fr 270px  ;
   
 }
 
 .header{
+  position: sticky;
+  top: 0; 
+  z-index: 1000; 
   margin: 0;
   padding: 0;
   display: grid;
@@ -300,11 +430,19 @@ color: white;
 .empty-container1{
   grid-row-start: 1;
   background-color:#4051B5;
+  position: sticky;
+  top: 0; 
+  z-index: 1000; 
+  
 }
 .empty-container2{
   grid-row-start: 1;
   grid-column-start: 3;
   background-color:#4051B5;
+  position: sticky;
+  top: 0; 
+  z-index: 1000; 
+  background-color: #4051B5; 
 }
 
 
@@ -321,6 +459,10 @@ color: white;
   flex-direction: column;
   grid-column-start: 1;
   margin: 24px;
+  position: sticky;
+  top: 100px; 
+  align-self: flex-start;
+ 
 }
 
 .sidebar-left a{
@@ -340,6 +482,9 @@ color: white;
   flex-direction: column;
   grid-column-start: 3;
   margin: 24px;
+  position: sticky;
+  top: 100px; 
+  align-self: flex-start;
 }
 
 .sidebar-right a{
@@ -429,6 +574,165 @@ color: white;
 .pink {
   background-color: #e83e8c;
 }
+
+.second-grid{
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: repeat(5,220px);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.box1{
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 1;
+  grid-column-end: 1;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  padding: 15px;
+  height: auto;
+  width: auto;
+}
+
+.box2{
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 1;
+  grid-column-end: 2;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  padding: 15px;
+  height: auto;
+  width: auto;
+}
+
+.box3{
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 1;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  padding: 15px;
+  height: auto;
+  width: auto;
+}
+
+.box4{
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 2;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  padding: 15px;
+  height: auto;
+  width: auto;
+}
+
+.box5{
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 1;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  padding: 15px;
+  height: auto;
+  width: auto;
+}
+
+.box6{
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 2;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  padding: 15px;
+  height: auto;
+  width: auto;
+}
+
+.box7{
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 1;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  padding: 15px;
+  height: auto;
+  width: auto;
+}
+.box8{
+  grid-row-start: 4;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 2;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  padding: 15px;
+  height: auto;
+  width: auto;
+}
+.box9{
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 1;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  padding: 15px;
+  height: auto;
+  width: auto;
+}
+.box10{
+  grid-row-start: 5;
+  grid-column-start: 2;
+  grid-row-end: 5;
+  grid-column-end: 2;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  padding: 15px;
+  height: auto;
+  width: auto;
+}
+
+.shortcut-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+}
+
+.shortcut-table thead th {
+  border-bottom: 2px solid #ddd;
+  text-align: left;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.shortcut-table tbody td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.footer{
+  grid-row-start: 3;
+  grid-column-start: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr ;
+}
+.footer1{
+  display: flex;
+  justify-content: flex-end;
+  grid-row-start: 1;
+}
+
+
 
 
 

@@ -14,6 +14,9 @@ export default defineComponent({
 
 <template>
   <div class="main">
+    <div class="empty-container1"></div>
+    <div class="empty-container2"></div>
+
 
     <div class="header">
 
@@ -48,9 +51,49 @@ export default defineComponent({
         <a href="#">Tutorials</a>
         <a href="#">Meta</a>
         <a href="#">Blogs</a>
+        <p>Community</p>
+        <a href="#">Users</a>
+        <a href="#">Highlights</a>
+        <a href="#">Contributing</a>
 
 
       </div>
+      
+
+     
+
+
+    </div>
+
+    <div class="body">
+
+      <div class="sidebar-left">
+        <p>Home</p>
+        <a href="#">about</a>
+        <p>WalkThrough</p>
+        <a href="#">Installation</a>
+        <a href="#">Introduction</a>
+        <a href="#">Enviroments</a>
+        <a href="#">Versioning</a>
+        <a href="#">Builds</a>
+        <p>Learn</p>
+        <a href="#">Next Steps</a>
+        <a href="#">Why Hatch?</a>
+        <p>History</p>
+        <a href="#">Hatch</a>
+        <a href="#">Hatching</a>
+
+      </div>
+
+      <div class="sidebar-right">
+        <p>Table of Contents</p>
+        <a href="#">License</a>
+        <a href="#">Navigation</a>
+
+
+      </div>
+
+
 
 
 
@@ -85,6 +128,7 @@ export default defineComponent({
   padding: 0;
   display: grid;
   grid-column-start: 2;
+  grid-row-start: 1;
   background-color: #4051B5;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 698px 621px;
@@ -179,6 +223,64 @@ color: white;
   color: white;
   border: 0;
 }
+.empty-container1{
+  grid-row-start: 1;
+  background-color:#4051B5;
+}
+.empty-container2{
+  grid-row-start: 1;
+  grid-column-start: 3;
+  background-color:#4051B5;
+}
+
+
+.body{
+  display: grid;
+  grid-template-columns: 245px 690px 123px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.sidebar-left{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  grid-column-start: 1;
+  margin: 24px;
+}
+
+.sidebar-left a{
+  text-decoration: none;
+  margin: 0 10px;
+  color: black;
+}
+
+.sidebar-left p{
+  margin: 0 10px;
+  color: grey;
+}
+
+.sidebar-right{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  grid-column-start: 3;
+  margin: 24px;
+}
+
+.sidebar-right a{
+  text-decoration: none;
+  margin: 0 10px;
+  color: black;
+}
+
+.sidebar-right p{
+  margin: 0 10px;
+  color: grey;
+}
+
+
+
 
 
 

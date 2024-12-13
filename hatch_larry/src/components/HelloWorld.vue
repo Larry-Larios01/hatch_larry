@@ -91,8 +91,83 @@ export default defineComponent({
         <a href="#">Navigation</a>
 
 
+
+
       </div>
 
+      <div class="main-content">
+
+          <div class="first-part">
+            <h2 id="hatch-main">Hatch</h2>
+            <button id="btn-edit-page">edit this page</button>
+
+          </div>
+
+          <div class="first-grid-of-main-content">
+            <img src="./icons/snakehatch.svg" alt="snakesvg" id="imagesnake">
+            <table class="status-table">
+              <thead>
+                <tr>
+                  <th>Section</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>CI/CD</th>
+                  <td>
+                    <span class="badge green">test passing</span>
+                    <span class="badge red">build hatch failing</span>
+                    <span class="badge red">build hatchling failing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Docs</th>
+                  <td>
+                    <span class="badge green">release docs passing</span>
+                    <span class="badge green">dev docs passing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Package</th>
+                  <td>
+                    <span class="badge blue">PyPI v1.13.0</span>
+                    <span class="badge blue">Python 3.8 | 3.9 | 3.10 | 3.11 | 3.12 | 3.13</span>
+                    <span class="badge blue">Installs 39M/month</span>
+                    <span class="badge blue">Downloads 364k</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Meta</th>
+                  <td>
+                    <span class="badge purple">Hatch</span>
+                    <span class="badge purple">Ruff</span>
+                    <span class="badge purple">types Mypy</span>
+                    <span class="badge pink">license MIT</span>
+                    <span class="badge pink">Sponsors ❤️ 10</span>
+                  </td>
+                </tr>
+              </tbody>
+           </table>
+                            
+
+            
+
+
+          </div>
+
+          <p>Hatch is a modern, extensible Python project manager. See the <a href="#">Why Hatch? </a>page for more information.</p>
+
+
+
+
+          
+          
+      </div>
+
+
+
+     
 
 
 
@@ -278,7 +353,82 @@ color: white;
   color: grey;
 }
 
+.main-content{
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.first-part{
+  display: flex; /* Contenedor flexible */
+  justify-content: space-between; /* Separa el título y el botón */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 10px 20px;
 
+}
+
+.first-grid-of-main-content{
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 500px;
+}
+
+#imagesnake{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  height: 437px;
+  width: 270px;
+}
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start:1;
+}
+.status-table th,
+.status-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.status-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  width: 69px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 2px 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+}
+
+.green {
+  background-color: #28a745;
+}
+
+.red {
+  background-color: #dc3545;
+}
+
+.blue {
+  background-color: #007bff;
+}
+
+.purple {
+  background-color: #6f42c1;
+}
+
+.pink {
+  background-color: #e83e8c;
+}
 
 
 

@@ -16,6 +16,8 @@ export default defineComponent({
   <div class="main">
     <div class="empty-container1"></div>
     <div class="empty-container2"></div>
+    <div class="empty-container3"></div>
+    <div class="empty-container4"></div>
     <div class="footer">
       <div class="footer1">
         <a href="#">Installation -></a>
@@ -23,6 +25,10 @@ export default defineComponent({
 
       <div class="footer2">
 
+          <p>Copyright © Ofek Lev 2017-present</p>
+          <p>  Logo by DALL·E and Boris Crowther</p>
+          <p> Made with Material for MkDocs </p>
+        
       </div>
 
     </div>
@@ -724,13 +730,52 @@ color: white;
   grid-row-start: 3;
   grid-column-start: 2;
   display: grid;
-  grid-template-rows: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0;
+  gap: 0;
 }
 .footer1{
   display: flex;
   justify-content: flex-end;
   grid-row-start: 1;
+  background-color: #212121;
+  align-items: end;
 }
+
+.footer1 a{
+color: white;
+}
+
+.footer2{
+  display: flex;
+  align-items: flex-start;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background-color: #161616;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  color: white;
+  flex-direction: column;
+
+
+}
+
+.empty-container3{
+  grid-row-start: 3;
+  grid-column-start: 1;
+  background-color:#161616;
+
+}
+
+.empty-container4{
+  grid-row-start: 3;
+  grid-column-start: 3;
+  background-color:#161616;
+
+}
+
 
 
 

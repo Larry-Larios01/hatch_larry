@@ -50,12 +50,7 @@ export default defineComponent({
         <a href="#">How-to</a>
         <a href="#">Tutorials</a>
         <a href="#">Meta</a>
-        <a href="#">Blogs</a>
-        <p>Community</p>
-        <a href="#">Users</a>
-        <a href="#">Highlights</a>
-        <a href="#">Contributing</a>
-
+        <a href="#">Blog</a>
 
       </div>
       
@@ -82,6 +77,11 @@ export default defineComponent({
         <p>History</p>
         <a href="#">Hatch</a>
         <a href="#">Hatching</a>
+        <p>Community</p>
+        <a href="#">Users</a>
+        <a href="#">Highlights</a>
+        <a href="#">Contributing</a>
+
 
       </div>
 
@@ -130,7 +130,7 @@ export default defineComponent({
   grid-column-start: 2;
   grid-row-start: 1;
   background-color: #4051B5;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 40px 70px;
   grid-template-columns: 698px 621px;
 
 
@@ -143,7 +143,6 @@ justify-content: flex-start;
 font-size: 15px;
 margin: 20px;
 grid-row-start: 2;
-
 }
 
 
